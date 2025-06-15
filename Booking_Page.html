@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+
+    <link rel="stylesheet" href="CSS/NavagationBar_style.css">
+    <link rel="stylesheet" href="CSS/Travelling_Pages_style.css">
+
+</head>
+
+<body>
+
+    <!--Navagation bar-->
+    <header>
+
+        <div class="container">
+            <div class="navbar-name" id="brand-name">WONDERLAND</div>
+            <div class="middle-div"></div>
+            <div class="navbar">
+                <nav>
+                    <ul id="navbar-list">
+                        <li><a href="Booking_Page.html" target="_blank">Book now</a></li>
+                        <li><a href="Holiday_Packages_page.html" target="_blank">Packages</a></li>
+                        <li><a href="Home_page.html" target="_blank">Home Page</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <div>
+        <form id="vacation_form" class="card_body">
+            <div class="form_row">
+                <div class="input_group">
+                    <label for="FirstName">First Name</label>
+                    <input type="text" id="FirstName" name="FirstName" placeholder="Enter first name" required>
+                </div>
+                <div class="input_group">
+                    <label for="LastName">Last Name</label>
+                    <input type="text" id="LastName" name="LastName" placeholder="Enter last name" required>
+                </div>
+            </div>
+
+
+            <div class="input_group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+            </div>
+
+            <div class="input_group">
+                <label for="package">Holiday Package</label>
+
+                <select id="package" name="package" required>
+                    <option value="" disabled hidden selected>Choose your destination</option>
+                    <option value="1299">Santorini, Greece - AED 1,299</option>
+                    <option value="1899">Bali, Indonesia - AED 1,899</option>
+                    <option value="899">Cairo, Egypt - AED 899</option>
+                    <option value="1299">Tokyo, Japan - AED 1,299</option>
+                    <option value="1749">Dubai, UAE - AED 1,749</option>
+                </select>
+            </div>
+
+
+            <div class="price_display">
+                <span class="total">Total:</span>
+                <span id="total_Price">AED 0</span>
+            </div>
+
+            <div class="payment_section">
+                <h3 class="payment_title">Payment Information</h3>
+
+                <div class="input_group">
+                    <label for="creditCardNum">Card Number</label>
+                    <input type="text" name="creditCardNum" maxlength="16" placeholder="1234 5678 9012 3456" required>
+                </div>
+
+                <div class="form_row">
+                    <div class="input_group">
+                        <label for="CVV">CVV</label>
+                        <input type="text" name="CVV" id="CVV" maxlength="3" placeholder="CVV" required>
+                    </div>
+                    <div class="input_group">
+                        <label>Expiry Date</label>
+                        <div class="expiry_fields">
+                            <input type="text" name="MM" id="MM" maxlength="2" placeholder="MM" required>
+                            <span>/</span>
+                            <input type="text" name="YY" id="YY" maxlength="2" placeholder="YY" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="book_now_btn" id="Book_btn_submit">Book Now</button>
+        </form>
+    </div>
+    </div>
+
+    <footer></footer>
+    <script src="../HTML/JS/Booking_Page_code.js"></script>
+</body>
+
+</html>

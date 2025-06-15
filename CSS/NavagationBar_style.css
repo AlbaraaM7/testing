@@ -1,0 +1,67 @@
+body {
+    margin-top: 1px;
+    margin-right: 0px;
+    margin-left: 1px;
+}
+
+main {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#brand-name {
+    font-size: 1.5em;
+    font-family: system-ui;
+    align-content: center;
+    padding: 1%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: hsl(0, 0%, 100%);
+    padding: 0px;
+    margin: 0px;
+    margin-top: 2px;
+    margin-right: 2px;
+    overflow: hidden;
+    border: 0px;
+    margin-left: 0px;
+}
+
+.navbar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 1.7em;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover {
+    /*  Choose a color palette */
+    background-color: #252525;
+    color: #fffbc9;
+    border-radius: 50px;
+}
+
+.navbar li {
+    float: right;
+}
+
+#brand-name {
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    background-color: hsl(0, 0%, 100%);
+    padding-left: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.navbar-list {
+    display: inline-block;
+}
